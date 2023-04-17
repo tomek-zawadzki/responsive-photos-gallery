@@ -31,7 +31,7 @@ html {
 .scrollbar {
   display: flex;
   gap: 0.5rem;
-  position: sticky;
+  position: fixed;
   overflow-x: scroll;
   overflow-y: hidden;
   bottom: 4rem;
@@ -67,6 +67,7 @@ html {
     border: none;
     box-shadow: 0px 0px 40px 20px rgba(255, 165, 0, 1);
     bottom: 0;
+    right: 0;
     justify-self: center;
     width: 100%;
   }
