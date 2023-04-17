@@ -37,7 +37,7 @@ html {
   bottom: 4rem;
   right: 4rem;
   justify-self: end;
-  max-width: 60rem;
+  width: 60rem;
   height: 14rem;
   border: 0.5rem solid orange;
   background-color: orange;
@@ -62,5 +62,12 @@ html {
   transform: scale(1.2);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
+  .scrollbar {
+    border: none;
+    box-shadow: 0px 0px 40px 20px rgba(255, 165, 0, 1);
+    bottom: 0;
+    justify-self: center;
+    width: 100%;
+  }
 }
