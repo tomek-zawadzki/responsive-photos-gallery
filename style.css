@@ -12,4 +12,55 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.body {
+  position: relative;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.gallery__photo {
+  width: 100%;
+}
+
+.scrollbar {
+  display: flex;
+  gap: 0.5rem;
+  position: sticky;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  bottom: 4rem;
+  right: 4rem;
+  justify-self: end;
+  max-width: 60rem;
+  height: 14rem;
+  border: 0.5rem solid orange;
+  background-color: orange;
+}
+
+.scrollbar a {
+  display: flex;
+  flex-wrap: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.scrollbar__photo {
+  cursor: pointer;
+  height: 14rem;
+  width: 20rem;
+  object-fit: cover;
+  transition: scale, 0.3s;
+}
+
+.scrollbar__photo:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 900px) {
 }
